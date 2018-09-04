@@ -1,0 +1,21 @@
+.c-loader {
+  width: 50px;
+  text-align: center;
+}
+
+.c-loader__ball {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: orange;
+  @include loading-balls();
+}
+
+.c-loader__ball--1 {
+  animation-delay: -0.32s;
+}
+
+.c-loader__ball--2 {
+  animation-delay: -0.16s;
+}

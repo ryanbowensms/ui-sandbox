@@ -1,0 +1,36 @@
+// base palette
+$oxford-blue: #1b2b45;
+$sapphire-blue: #5383a0;
+$light-grey: #e9e9e9;
+$medium-grey: #666;
+$dark-grey: #111;
+$green: #37ac64;
+$light-blue: #80bdff;
+$dark-blue-shadow: rgba(0,123,255,.25);
+$white: #fafafa;
+
+// main colors
+$primary-color: $oxford-blue;
+$secondary-color: $sapphire-blue;
+$tertiary-color: $green;
+$header-color: $primary-color;
+
+// main font
+$font-color: $dark-grey;
+
+// inputs
+$input-border-color: $light-grey;
+$label-color: $dark-grey;
+
+// links
+$link-secondary: lighten($primary-color, 40);
+
+// disabled readonly
+$readonly-disabled-bg: lighten($light-grey, 6);
+
+// input focus colours
+$focus-color: $light-blue;
+$focus-shadow: 0 0 0 .2rem $dark-blue-shadow;
+
+// datatable
+$datatable-row-hover-color: lighten($secondary-color, 50);

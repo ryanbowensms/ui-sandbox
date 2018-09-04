@@ -1,0 +1,62 @@
+// utilities
+.u-text-small {
+  font-size: $font-small;
+}
+
+.u-text-tiny {
+  font-size: $font-tiny;
+}
+
+.u-text-secondary {
+  color: $secondary-color;
+}
+
+.u-text-tertiary {
+  color: $tertiary-color;
+}
+
+.u-link-secondary {
+  color: $secondary-color;
+  &:hover {
+    color: darken($secondary-color, 20%);
+  }
+}
+
+.u-weight-thin {
+  font-weight:200;
+}
+
+.u-shift-up {
+  transform: translate(0, -$gutter * 10);
+}
+
+.u-heading-space {
+  padding-bottom: $gutter * .9;
+  margin-bottom: $gutter * 1.5;
+}
+
+.u-heading-space-lg {
+  padding-bottom: $gutter * 3;
+  margin-bottom: $gutter * 5;
+}
+
+.u-space-evenly {
+  justify-content: space-evenly;
+}
+
+.u-opacity-none {
+  opacity:0;
+}
+
+.u-height-lg {
+  height: $gutter * 6;
+  margin-top: $gutter * 6;
+}
+
+.u-heading-border {
+  border-bottom: 1px solid $secondary-color;
+}
+
+.u-heading-border--light {
+  border-bottom: 1px solid lighten($secondary-color, 40%);
+}

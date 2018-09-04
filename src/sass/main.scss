@@ -1,0 +1,33 @@
+// import all partials here
+
+// libraries
+@import 'lib/_lib';
+
+// variables
+@import 'variables/colors';
+@import 'variables/general';
+
+// helpers
+@import 'helpers/functions';
+@import 'helpers/animations';
+
+// base
+@import 'base/base';
+// @import 'base/bootstrap';
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/page';
+
+// components
+@import 'components/loader';
+// @import 'components/navbar-account';
+// @import 'components/badgerow';
+// @import 'components/calendar';
+// @import 'components/ng-select';
+// @import 'components/ngx-datatable';
+
+// utilities
+@import 'utilities';
+
