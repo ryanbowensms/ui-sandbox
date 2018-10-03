@@ -12,7 +12,9 @@ const browserSync = require('browser-sync').create();
 gulp.task('build', function () {
     return gulp.src('./src/sass/**/*.*ss')
         .pipe(cleandest('./dist/css'))
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+            includePaths: ['./node_modules/bootstrap/scss']
+        }).on('error', sass.logError))
         .pipe( postcss([require('precss'), require('autoprefixer')]) )
         .pipe(gulp.dest('./dist/css'))
         .pipe(rename({suffix: '.min'}))

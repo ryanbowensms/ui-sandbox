@@ -1,0 +1,26 @@
+// Buttons mixin - just pass a BG color, optional text color
+
+
+@mixin button($bgcolor: lightgreen, $color: #111) {
+  background-color: $bgcolor;
+  border-color: darken($bgcolor, 2%);
+  color: color-yiq($bgcolor, $color);
+  &:hover {
+    background-color: darken($bgcolor, 5%);
+    border-color: darken($bgcolor, 9%);
+  }
+  &.focus,
+  &:focus,
+  &:not(:disabled):not(.disabled):active:focus {
+    box-shadow:0 0 0 0.2rem rgba($bgcolor, .6);
+  }
+  &:not(:disabled):not(.disabled):active{
+    background-color: darken($bgcolor, 9%);
+    border-color: darken($bgcolor, 11%);
+  }
+  &:disabled {
+    background-color: lighten($bgcolor, 2%);
+    border-color: lighten($bgcolor, 2%);
+    cursor: default;
+  }
+}

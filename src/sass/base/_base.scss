@@ -1,6 +1,7 @@
 // Base css in here, reset.css etc
-
-html {
+html,
+body {
+  height: 100%;
   font-size: $font-size;
 }
 

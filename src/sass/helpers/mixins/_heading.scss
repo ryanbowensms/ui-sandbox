@@ -1,0 +1,38 @@
+// heading mixins - to aid with vertical rhythm
+@mixin heading {
+  font-weight: $fontweight-light;
+  font-family: inherit;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: $c-primary;
+}
+
+@mixin heading-1 {
+  @include heading;
+  font-size: 3.375em;
+}
+
+@mixin heading-2 {
+  @include heading;
+  font-size: 2.966em;
+}
+
+@mixin heading-3 {
+  @include heading;
+  font-size: 1.5em;
+}
+
+@mixin heading-4 {
+  @include heading;
+  font-size: 1.318em;
+}
+
+@mixin heading-5 {
+  @include heading;
+  font-size: 1em;
+}
+
+@mixin heading-6 {
+  @include heading;
+  font-size: 0.875em;
+}

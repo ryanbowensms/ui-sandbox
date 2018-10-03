@@ -1,41 +1,10 @@
-// page layout
-html, body, bp-root {
-  height: 100%;
-}
-
-bp-root {
-  display: flex;
-  flex-direction: column;
-}
-
-.bp-topcontent {
-  flex: 1 0 auto;
-}
-
-.sticky-footer {
-  flex-shrink: 0;
-}
-
+// page container bootstrap modifiers
 .container-fluid--laptop-and-down {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.navbar > .container-fluid--laptop-and-down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 @media (min-width: $media-breakpoint-xl) {
@@ -50,45 +19,3 @@ bp-root {
     flex-wrap: nowrap;
   }
 }
-// sign-in logo
-.sign-in-logo {
-  width: 256px;
-}
-
-// alt link style
-.link-secondary {
-  color: $link-secondary;
-  &:hover {
-    color: darken($link-secondary, 20%);
-  }
-}
-
-.btn-pink {
-  @include bootstrap-button(pink, white);
-}
-
-.btn-outline-pink {
-  @include bootstrap-outline-button(pink);
-}
-
-.btn-orange {
-  @include bootstrap-button(orange);
-}
-
-.btn-gold {
-   @include bootstrap-button(gold);
- }
-
-.btn-purple {
-  @include bootstrap-button(purple);
-}
-
-.btn-brown {
-  @include bootstrap-button(brown);
-}
-
-.btn-violet {
-  @include bootstrap-button(violet);
-}
-
-

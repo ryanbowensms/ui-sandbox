@@ -1,36 +1,41 @@
 // base palette
-$oxford-blue: #1b2b45;
-$sapphire-blue: #5383a0;
-$light-grey: #e9e9e9;
-$medium-grey: #666;
-$dark-grey: #111;
-$green: #37ac64;
-$light-blue: #80bdff;
-$dark-blue-shadow: rgba(0,123,255,.25);
-$white: #fafafa;
+$c-oxford-blue: #1b2b45;
+$c-sapphire-blue: #5383a0;
+$c-light-grey: #e9e9e9;
+$c-medium-grey: #666;
+$c-dark-grey: #111;
+$c-green: #37ac64;
+$c-light-blue: #80bdff;
+$c-dark-blue-shadow: rgba(0,123,255,.25);
+$c-white: #fafafa;
+$c-debug: #88b991;
 
 // main colors
-$primary-color: $oxford-blue;
-$secondary-color: $sapphire-blue;
-$tertiary-color: $green;
-$header-color: $primary-color;
+$c-primary: $c-oxford-blue;
+$c-secondary: $c-sapphire-blue;
+$c-tertiary: $c-green;
+$c-header: $c-primary;
 
 // main font
-$font-color: $dark-grey;
+$font-color: $c-dark-grey;
 
 // inputs
-$input-border-color: $light-grey;
-$label-color: $dark-grey;
+$input-border-color: $c-light-grey;
+$label-color: $c-dark-grey;
 
 // links
-$link-secondary: lighten($primary-color, 40);
+$link-primary: lighten($c-primary, 40);
+$link-secondary: lighten($c-secondary, 40);
 
 // disabled readonly
-$readonly-disabled-bg: lighten($light-grey, 6);
+$readonly-disabled-bg: lighten($c-light-grey, 6);
 
 // input focus colours
-$focus-color: $light-blue;
-$focus-shadow: 0 0 0 .2rem $dark-blue-shadow;
+$focus-color: $c-light-blue;
+$focus-shadow: 0 0 0 .2rem $c-dark-blue-shadow;
 
 // datatable
-$datatable-row-hover-color: lighten($secondary-color, 50);
+$datatable-row-hover-color: lighten($c-secondary, 50);
+
+
+

@@ -8,6 +8,8 @@ $font-tiny: .7em;
 
 $fontweight-xlight: 200;
 $fontweight-light: 300;
+$fontweight-heavy: 600;
+$fontweight-xheavy: 800;
 
 // gutter
 $gutter: 15px;
@@ -19,4 +21,5 @@ $input-height-normal: 33.5px;
 $media-breakpoint-l: 992px;
 $media-breakpoint-xl: 1441px;
 
-
+// config switches
+$dev: false;

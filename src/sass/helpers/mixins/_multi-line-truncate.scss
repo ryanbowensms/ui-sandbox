@@ -1,0 +1,8 @@
+@mixin multi-line-truncate($font-size: $font-size, $line-height: 1, $lines-to-show: 3) {
+  height: $font-size * $line-height * $lines-to-show; /* Fallback for non-webkit */
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

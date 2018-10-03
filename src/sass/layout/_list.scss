@@ -1,0 +1,29 @@
+// list layout block that can flow horizontal and vertical
+// list items will be bordered on the right for horizontal and on the bottom for vertical
+// the last list item will not have a border
+// designed to be Mixed in with other blocks
+
+.l-list {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  &__item {
+    border-bottom:1px solid $c-light-grey;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+// modifier
+.l-list--flow-row {
+  flex-direction: row;
+  & .l-list__item {
+    border-bottom: none;
+    border-right:1px solid $c-light-grey;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+

@@ -1,0 +1,65 @@
+// mocked inherited styles in here, bad style rules
+
+
+
+// attribute selector - cascades styles to elements potentially not in scope yet based on location
+// better to add an opt in class
+// written in BEM style:
+
+.sidebar h3 {
+  color:red;
+}
+
+.maincontent h3 {
+  color:blue;
+}
+
+.maincontent img {
+  width: 100%;
+  border: 2px solid #212529;
+}
+.maincontent div {
+  font-weight:bold;
+}
+
+
+// nav styles, tightly coupled to the markup
+nav > ul {
+  list-style: none;
+  display: block;
+}
+nav > ul > li {
+  list-style: none;
+  float:left;
+  padding:0.2em 1em;
+  margin:.5em;
+  border-right:1px solid $c-light-grey;
+  &:last-child {
+    border: none;
+  }
+}
+nav > ul > li a.navitem {
+  color: purple;
+  &:hover {
+    cursor: pointer;
+    color: green;
+  }
+}
+
+// what do I want to demo :
+// BEM components can be moved and don't care where they are placed
+// BEM classes are element agnostic
+// Poor styles leak to other elements
+// ID's are bad
+// flat specificity is promoted by BEM - means components play nice with each other
+// BEM classes describe clearly intent, makes it easier to remove or edit code and know what the implications are
+// elements have to opt in to the style not inherited by default
+
+
+// Go over:
+// namespacing of classes (c- u- js- l-)
+// project structure in more depth - look at roll up .scss files and partials - build up custom css via imports per project
+// Example of BEM component (new item)
+// Mix with layout block
+
+

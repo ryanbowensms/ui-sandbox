@@ -1,0 +1,58 @@
+@mixin fadeout {
+  animation-name:fade-out;
+  animation-duration:.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@mixin fadein ($duration:.2s, $delay:.4s) {
+  animation-name: fade-in;
+  animation-duration:$duration;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: $delay;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    display:flex;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// classes
+.a-fade-in {
+  @include fadein();
+}
+
+.a-fade-out {
+  @include fadeout();
+}
+
+.a-fade-in-fast {
+  @include fadein(.4s, 0);
+}
+
+.a-fade-in-slow-delayed {
+  @include fadein(.3s, 0.94s)
+}
+
+.a-fade-in-slow-delayed--long {
+  @include fadein(.4s, 1.3s)
+}
+
+
+

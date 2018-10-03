@@ -1,62 +1,78 @@
-// utilities
+// utilities - valid use case for !important
 .u-text-small {
-  font-size: $font-small;
+  font-size: $font-small !important;
 }
 
 .u-text-tiny {
-  font-size: $font-tiny;
+  font-size: $font-tiny !important;
 }
 
 .u-text-secondary {
-  color: $secondary-color;
+  color: $c-secondary !important;
 }
 
 .u-text-tertiary {
-  color: $tertiary-color;
+  color: $c-tertiary !important;
 }
 
 .u-link-secondary {
-  color: $secondary-color;
+  color: $c-secondary !important;
   &:hover {
-    color: darken($secondary-color, 20%);
+    color: darken($c-secondary, 20%) !important;
   }
 }
 
 .u-weight-thin {
-  font-weight:200;
+  font-weight:200 !important;
 }
 
 .u-shift-up {
-  transform: translate(0, -$gutter * 10);
+  transform: translate(0, -$gutter * 10) !important;
 }
 
 .u-heading-space {
-  padding-bottom: $gutter * .9;
-  margin-bottom: $gutter * 1.5;
+  padding-bottom: $gutter * .9 !important;
+  margin-bottom: $gutter * 1.5 !important;
 }
 
 .u-heading-space-lg {
-  padding-bottom: $gutter * 3;
-  margin-bottom: $gutter * 5;
+  padding-bottom: $gutter * 3 !important;
+  margin-bottom: $gutter * 5 !important;
 }
 
 .u-space-evenly {
-  justify-content: space-evenly;
+  justify-content: space-evenly !important;
 }
 
 .u-opacity-none {
-  opacity:0;
+  opacity:0 !important;
 }
 
-.u-height-lg {
-  height: $gutter * 6;
-  margin-top: $gutter * 6;
+.u-sticky-footer {
+  flex-shrink: 0;
 }
 
-.u-heading-border {
-  border-bottom: 1px solid $secondary-color;
+
+
+
+// Only for demo purposes
+.u-dev-annotation {
+  font-weight: $fontweight-light;
+  font-size: 1em;
+  color: $c-debug;
+  display:none;
+  &::before {
+    content:'['
+  }
+  &::after {
+    content:']'
+  }
 }
 
-.u-heading-border--light {
-  border-bottom: 1px solid lighten($secondary-color, 40%);
+@if($dev) {
+  [class^='col-'] {
+    border: 1px dashed $c-light-grey;
+  }
+  .u-dev-annotation {
+    display: block;}
 }

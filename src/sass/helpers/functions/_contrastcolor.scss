@@ -1,0 +1,16 @@
+// sets the text colour based on the yiq contrast equation
+// optional light and dark arguments
+
+@function color-yiq($color, $dark : $c-dark-grey, $light: $c-white) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($yiq >= 128) {
+    @return $dark;
+  } @else {
+    @return $light;
+  }
+}

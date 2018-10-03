@@ -1,21 +1,36 @@
+// loader component BEM style
 .c-loader {
-  width: 50px;
   text-align: center;
+  &__ball {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $c-primary;
+    @include pulse();
+  }
 }
 
-.c-loader__ball {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: orange;
-  @include loading-balls();
-}
-
+// modifier
 .c-loader__ball--1 {
   animation-delay: -0.32s;
 }
 
+// modifier
 .c-loader__ball--2 {
   animation-delay: -0.16s;
+}
+
+// modifier
+.c-loader--size-large {
+  & .c-loader__ball {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.c-loader--shape-square {
+  & .c-loader__ball {
+    border-radius: 0;
+  }
 }

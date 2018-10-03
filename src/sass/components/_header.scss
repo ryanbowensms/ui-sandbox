@@ -1,0 +1,84 @@
+// Note - overrides for some Bootsrap classes in here
+// not an example of a nice BEM component
+
+// navigation
+$headerTextIsLight: false;
+@if (color-yiq($c-header , $c-dark-grey, $c-white) == $c-white) {
+  $headerTextIsLight: true;
+}
+
+.header {
+  margin-bottom: $gutter *2;
+}
+
+.navbar {
+  background-color: $c-header;
+  color: color-yiq($c-header, $c-dark-grey, $c-white);
+
+  &__logo {
+    width: 128px;
+    @if ($headerTextIsLight) {
+      background-image:url('/src/assets/images/sms-logo-full-white-nobg-512.png');
+    } @else {
+      background-image:url('/src/assets/images/sms-logo-full-black-nobg.png');
+    }
+    background-size: cover;
+    height:32px;
+  }
+
+  &__toolname {
+    position:relative;
+    top:2px;
+    left:5px;
+    font-size:1.3em;
+    font-weight: 100;
+  }
+
+  a,
+  li a.nav-link,
+  li a.nav-link.active {
+    color: color-yiq($c-header, $c-dark-grey, $c-white);
+  }
+
+  li a.nav-link:hover  {
+    @if ($headerTextIsLight) {
+      color: darken(color-yiq($c-header, $c-dark-grey, $c-white), 20);
+    } @else {
+      color: lighten(color-yiq($c-header, $c-dark-grey, $c-white), 30);
+    }
+    cursor:pointer;
+  }
+
+  & .navbar-toggler {
+    color: color-yiq($c-header, $c-dark-grey, $c-white);
+  }
+
+}
+
+.navbar-brand {
+  position:relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  list-style:none;
+}
+
+.nav-dropdown {
+  color: $font-color;
+}
+
+.navbar > .container-fluid--laptop-and-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}

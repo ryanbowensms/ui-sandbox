@@ -1,0 +1,53 @@
+// Base button component (object) can't contain other blocks
+// o- namespace indicates this class can potentially be used in many places
+.o-btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 0px solid transparent;
+  border-radius:2px;
+  margin:2px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .1em $c-primary;
+  }
+
+  &:disabled {
+    opacity: .7;
+    box-shadow:none;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  &:not(:disabled):active {
+    box-shadow: inset 0 3px 5px rgba($black, .125);
+
+    &:focus {
+      box-shadow: inset 0 3px 5px rgba($black, .125);
+    }
+  }
+
+}
+
+// modifiers
+.o-btn--primary {
+  @include button($c-primary);
+}
+.o-btn--secondary{
+  @include button($c-secondary);
+}
+.o-btn--tertiary {
+  @include button($c-tertiary);
+}

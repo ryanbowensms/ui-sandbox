@@ -1,0 +1,14 @@
+// sidebar component BEM style
+.c-sidebar {
+  background-color: $c-light-grey;
+  &__link {
+    color: $c-tertiary;
+    &:hover {
+      color: darken($c-tertiary, +15);
+    }
+  }
+  &__title {
+    color: darken($c-tertiary, +10);
+    border-bottom: 1px solid $c-tertiary;
+  }
+}

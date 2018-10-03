@@ -1,0 +1,55 @@
+// News item component BEM style
+.c-news-item {
+  display: flex;
+
+  &__inner {
+    margin: $gutter / 2;
+  }
+
+  &__title {
+    font-weight: $fontweight-light;
+    color: $c-secondary;
+  }
+
+  &__thumb {
+    height: 100%;
+    max-height: 180px;
+  }
+
+  &__text {
+    font-weight: $fontweight-light;
+  }
+}
+
+// modifier
+.c-news-item--flow-col {
+  flex-direction: column;
+  & .c-news-item__thumb {
+    width:100%;
+    max-height:unset;
+    height:unset;
+  }
+}
+
+// modifier
+.c-news-item--featured {
+  background-color: darken($c-primary, +10);
+  color: color-yiq(darken($c-primary, +10));
+  & .c-news-item__title {
+    color: color-yiq(darken($c-primary, +10));
+    font-style: italic;
+  }
+}
+
+// modifier
+.c-news-item--summary {
+  & .c-news-item__text {
+    @include multi-line-truncate(1em, 1, 4);
+  }
+  & .c-news-item__thumb {
+    max-height: 90px;
+  }
+  & .c-news-item__title {
+    font-size: 1.1em;
+  }
+}

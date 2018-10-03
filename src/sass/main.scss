@@ -1,7 +1,7 @@
 // import all partials here
 
 // libraries
-@import 'lib/_lib';
+@import 'lib/lib';
 
 // variables
 @import 'variables/colors';
@@ -9,25 +9,23 @@
 
 // helpers
 @import 'helpers/functions';
+@import 'helpers/mixins';
 @import 'helpers/animations';
 
 // base
 @import 'base/base';
-// @import 'base/bootstrap';
+@import 'base/inheritedstyles';
 
 // layout
-@import 'layout/header';
-@import 'layout/footer';
 @import 'layout/page';
+@import 'layout/list';
 
 // components
+@import 'components/buttons';
+@import 'components/header';
+@import 'components/footer';
 @import 'components/loader';
-// @import 'components/navbar-account';
-// @import 'components/badgerow';
-// @import 'components/calendar';
-// @import 'components/ng-select';
-// @import 'components/ngx-datatable';
+@import 'components/news-item';
 
 // utilities
 @import 'utilities';
-
