@@ -5,6 +5,10 @@ This sandbox is here for the development team to experiment with SASS and BEM me
 ## install dependencies
 run ```npm i ```
 
+you might need to install gulp and gulp cli globally if you haven't already
+
+run ```npm i -g gulp``` + ```npm i -g gulp-cli```
+
 ## compile sass and watch changes + reload 
 run ```gulp serve```
 

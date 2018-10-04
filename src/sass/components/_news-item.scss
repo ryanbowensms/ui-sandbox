@@ -1,7 +1,6 @@
 // News item component BEM style
 .c-news-item {
   display: flex;
-
   &__inner {
     margin: $gutter / 2;
   }
