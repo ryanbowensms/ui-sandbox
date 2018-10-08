@@ -7,6 +7,27 @@ const cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
+const parker = require('gulp-parker');
+
+const metrics = [
+    "TotalStylesheets",
+    "TotalStylesheetSize",
+    "TotalRules",
+    "TotalSelectors",
+    "TotalIdentifiers",
+    "TotalDeclarations",
+    "SelectorsPerRule",
+    "IdentifiersPerSelector",
+    "SpecificityPerSelector",
+    "TopSelectorSpecificity",
+    "TopSelectorSpecificitySelector",
+    "TotalIdSelectors",
+    "TotalUniqueColours",
+    "UniqueColours",
+    "TotalImportantKeywords",
+    "TotalMediaQueries",
+    "MediaQueries"
+];
 
 
 gulp.task('build', function () {
@@ -24,11 +45,23 @@ gulp.task('build', function () {
 });
 
 
-
 gulp.task('serve', function () {
     browserSync.init({
         server: ["./", "dist"]
     });
     gulp.watch('./src/sass/**/*.scss', gulp.series('build'));
     gulp.watch("*.html").on('change', browserSync.reload);
+});
+
+
+gulp.task('default', gulp.series('build', 'serve'));
+
+
+gulp.task('parker', function() {
+    return gulp.src('./dist/css/main.css')
+        .pipe(parker({
+            file: 'report.md',
+            title: 'Parker report',
+            metrics: metrics
+        }));
 });

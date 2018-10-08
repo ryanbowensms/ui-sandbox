@@ -10,5 +10,8 @@ you might need to install gulp and gulp cli globally if you haven't already
 run ```npm i -g gulp``` + ```npm i -g gulp-cli```
 
 ## compile sass and watch changes + reload 
-run ```gulp serve```
+run ```gulp```
+
+## measure output CSS with Parker
+run ```gulp parker```
 
