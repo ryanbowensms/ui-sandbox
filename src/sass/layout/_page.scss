@@ -12,10 +12,3 @@
     max-width: 80%;
   }
 }
-
-@media (min-width: $media-breakpoint-xl) {
-  .navbar-expand-lg > .container-fluid--laptop-and-down {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
-}
