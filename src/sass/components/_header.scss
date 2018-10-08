@@ -1,0 +1,42 @@
+// header BEM component
+$headerTextIsLight: false;
+@if (color-yiq($c-header , $c-dark-grey, $c-white) == $c-white) {
+  $headerTextIsLight: true;
+}
+
+.c-header {
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: $gutter *2;
+  background-color: $c-header;
+  color: color-yiq($c-header, $c-dark-grey, $c-white);
+  padding: 1em 1.2em;
+
+  &__identity {
+    display:flex;
+    align-items: center;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    width: 128px;
+    @if ($headerTextIsLight) {
+      background-image:url('/src/assets/images/sms-logo-full-white-nobg-512.png');
+    } @else {
+      background-image:url('/src/assets/images/sms-logo-full-black-nobg.png');
+    }
+    background-size: cover;
+    background-position-y: -2px;
+    height:32px;
+  }
+
+  &__appname {
+    font-size:1.5em;
+    font-weight: 100;
+    color: color-yiq($c-header, $c-dark-grey, $c-white);
+
+  }
+}
