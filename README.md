@@ -15,3 +15,10 @@ run ```gulp```
 ## measure output CSS with Parker
 run ```gulp parker```
 
+#### Some useful links
+
+http://getbem.com/introduction/ [BEM]
+https://en.bem.info/methodology/ [BEM]
+https://github.com/katiefenn/parker [Parker] 
+https://sass-lang.com/ [SASS]
+
