@@ -19,7 +19,7 @@
 
 
 <header class="c-header"><!-- HEADER BLOCK -->
-    <a class="c-header__identity" href="/" >
+    <a class="c-header__identity" href="/">
         <span class="c-header__logo"></span>
         <span class="c-header__appname">UI Sandbox</span>
     </a>
@@ -34,7 +34,6 @@
 </header>
 
 
-
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -42,7 +41,7 @@
             <h1 class="h2">SMS UI Sandbox</h1>
             <p>
                 This sandbox is here for the development team to experiment with SASS and BEM methodolgy.
-                It demonstrates a sass project structure. It uses a simple Gulp build system to compile SASS files,
+                It demonstrates a SASS project structure. It uses a simple Gulp build system to compile SASS files,
                 utilising Autoprefixer to add vendor prefixes and Browser Sync to live reload the site.
             </p>
 
@@ -171,8 +170,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 
@@ -247,6 +244,194 @@
 
 
             <div class="l-list"> <!-- block-->
+                <div class="l-list__item c-news-item c-news-item--summary"> <!-- element + block mix -->
+                    <div class="c-news-item__inner"><!-- element -->
+                        <img class="c-news-item__thumb" src="https://placebear.com/200/200">
+                    </div>
+                    <div class="c-news-item__inner"><!-- element -->
+                        <h3 class="c-news-item__title"><!-- element -->
+                            A news item
+                        </h3>
+                        <div class="c-news-item__text"><!-- element -->
+                            Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
+                            three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
+                            venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
+                            quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
+                            Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
+                            three hoops disciplinary hearing.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="l-list__item c-news-item c-news-item--summary"> <!-- element + block mix -->
+                    <div class="c-news-item__inner"><!-- element -->
+                        <img class="c-news-item__thumb" src="https://placebear.com/400/400">
+                    </div>
+                    <div class="c-news-item__inner"><!-- element -->
+                        <h3 class="c-news-item__title"><!-- element -->
+                            Another piece of news
+                        </h3>
+                        <div class="c-news-item__text"><!-- element -->
+                            Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
+                            three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
+                            venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
+                            quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
+                            Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
+                            three hoops disciplinary hearing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="l-list__item c-news-item c-news-item--flow-col"> <!-- element + block mix -->
+                <div class="c-news-item__inner"><!-- element -->
+                    <img class="c-news-item__thumb" src="https://placebear.com/200/200">
+                </div>
+                <div class="c-news-item__inner"><!-- element -->
+                    <h3 class="c-news-item__title"><!-- element -->
+                        A news item
+                    </h3>
+                    <div class="c-news-item__text"><!-- element -->
+                        Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
+                        three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
+                        venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills
+                        The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead
+                        Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops
+                        disciplinary hearing.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h3 class="u-dev-annotation">full width content</h3>
+            <h4 class="h4">Loaders <span class="u-dev-annotation">BEM buttons - with size/shape modifiers</span></h4>
+            Normal loader:
+            <span class="c-loader">
+                <span class="c-loader__ball c-loader__ball--1"></span>
+                <span class="c-loader__ball c-loader__ball--2"></span>
+                <span class="c-loader__ball"></span>
+            </span>
+            <br><br>
+            Large loader
+            <span class="c-loader c-loader--size-large">
+                <span class="c-loader__ball c-loader__ball--1"></span>
+                <span class="c-loader__ball c-loader__ball--2"></span>
+                <span class="c-loader__ball"></span>
+            </span>
+            <br><br>
+            Square loader
+            <span class="c-loader c-loader--shape-square">
+                <span class="c-loader__ball c-loader__ball--1"></span>
+                <span class="c-loader__ball c-loader__ball--2"></span>
+                <span class="c-loader__ball"></span>
+            </span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h3 class="u-dev-annotation">full width content</h3>
+            <h4 class="h4">Buttons <span class="u-dev-annotation">BEM buttons - with color modifiers</span></h4>
+
+            <button class="o-btn">
+                normal button
+            </button>
+
+            <button class="o-btn o-btn--primary">
+                primary button
+            </button>
+
+            <button class="o-btn o-btn--secondary">
+                secondary button
+            </button>
+
+            <button class="o-btn o-btn--tertiary">
+                tertiary button
+            </button>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <h1 class="u-heading-space">Area with leaky css</h1>
+
+    <div class="row">
+        <div class="col-8 maincontent">
+            <h3 class="u-dev-annotation">8 wide</h3>
+            <h3>Main content</h3>
+            <div class="l-list"> <!-- block-->
+
+                <div class="l-list__item c-news-item"> <!-- element + block mix -->
+                    <div class="c-news-item__inner"><!-- element -->
+                        <img class="c-news-item__thumb" src="https://placebear.com/200/200">
+                    </div>
+                    <div class="c-news-item__inner"><!-- element -->
+                        <h3 class="c-news-item__title"><!-- element -->
+                            A news item
+                        </h3>
+                        <div class="c-news-item__text"><!-- element -->
+                            Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
+                            three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
+                            venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
+                            quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
+                            Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
+                            three hoops disciplinary hearing.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="l-list__item c-news-item"> <!-- element + block mix -->
+                    <div class="c-news-item__inner"><!-- element -->
+                        <img class="c-news-item__thumb" src="https://placebear.com/400/400">
+                    </div>
+                    <div class="c-news-item__inner"><!-- element -->
+                        <h3 class="c-news-item__title"><!-- element -->
+                            Another piece of news
+                        </h3>
+                        <div class="c-news-item__text"><!-- element -->
+                            Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
+                            three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
+                            venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
+                            quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
+                            Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
+                            three hoops disciplinary hearing.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="l-list__item c-news-item"> <!-- element + block mix -->
+                    <div class="c-news-item__inner"><!-- element -->
+                        <img class="c-news-item__thumb" src="https://placebear.com/300/300">
+                    </div>
+                    <div class="c-news-item__inner"><!-- element -->
+                        <h3 class="c-news-item__title"><!-- element -->
+                            I'm bored of news
+                        </h3>
+                        <div class="c-news-item__text"><!-- element -->
+                            Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
+                            three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
+                            venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
+                            quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
+                            Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
+                            three hoops disciplinary hearing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" id="sidebar">
+            <h3 class="u-dev-annotation">4 wide</h3>
+            <h3>Sidebar</h3>
+
+
+            <div class="l-list"> <!-- block-->
 
 
                 <div class="l-list__item c-news-item c-news-item--summary"> <!-- element + block mix -->
@@ -287,6 +472,24 @@
                     </div>
                 </div>
 
+                <div class="l-list__item c-news-item c-news-item--summary"> <!-- element + block mix -->
+                    <div class="c-news-item__inner"><!-- element -->
+                        <img class="c-news-item__thumb" src="https://placebear.com/300/300">
+                    </div>
+                    <div class="c-news-item__inner"><!-- element -->
+                        <h3 class="c-news-item__title"><!-- element -->
+                            I'm bored of news
+                        </h3>
+                        <div class="c-news-item__text"><!-- element -->
+                            Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
+                            three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
+                            venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
+                            quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
+                            Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
+                            three hoops disciplinary hearing.
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -309,255 +512,9 @@
                 </div>
             </div>
 
-
         </div>
-
-
 
     </div>
-
-    <div class="row">
-        <div class="col-12">
-            <h3 class="u-dev-annotation">full width content</h3>
-            <h4 class="h4">Loaders</h4>
-            Normal loader:
-            <span class="c-loader">
-                <span class="c-loader__ball c-loader__ball--1"></span>
-                <span class="c-loader__ball c-loader__ball--2"></span>
-                <span class="c-loader__ball"></span>
-            </span>
-            <br>
-            Large loader [modifier]
-            <span class="c-loader c-loader--size-large">
-                <span class="c-loader__ball c-loader__ball--1"></span>
-                <span class="c-loader__ball c-loader__ball--2"></span>
-                <span class="c-loader__ball"></span>
-            </span>
-            <br>
-            Square loader [modifier]
-            <span class="c-loader c-loader--shape-square">
-                <span class="c-loader__ball c-loader__ball--1"></span>
-                <span class="c-loader__ball c-loader__ball--2"></span>
-                <span class="c-loader__ball"></span>
-            </span>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <h3 class="u-dev-annotation">full width content</h3>
-            <h4 class="h4">Buttons <span class="u-dev-annotation">BEM buttons - with color mo</span></h4>
-
-            <button class="o-btn">
-                normal button
-            </button>
-
-            <button class="o-btn o-btn--primary">
-                primary button
-            </button>
-
-            <button class="o-btn o-btn--secondary">
-                secondary button
-            </button>
-
-            <button class="o-btn o-btn--tertiary">
-                tertiary button
-            </button>
-        </div>
-    </div>
-
-<h1 class="u-heading-space">Area with leaky css</h1>
-
-<div class="row">
-    <div class="col-8 maincontent">
-        <h3 class="u-dev-annotation">8 wide</h3>
-        <h3>Main content</h3>
-        <div class="l-list"> <!-- block-->
-
-            <div class="l-list__item c-news-item"> <!-- element + block mix -->
-                <div class="c-news-item__inner"><!-- element -->
-                    <img class="c-news-item__thumb" src="https://placebear.com/200/200">
-                </div>
-                <div class="c-news-item__inner"><!-- element -->
-                    <h3 class="c-news-item__title"><!-- element -->
-                        A news item
-                    </h3>
-                    <div class="c-news-item__text"><!-- element -->
-                        Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
-                        three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
-                        venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
-                        quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
-                        Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
-                        three hoops disciplinary hearing.
-                    </div>
-                </div>
-            </div>
-
-            <div class="l-list__item c-news-item"> <!-- element + block mix -->
-                <div class="c-news-item__inner"><!-- element -->
-                    <img class="c-news-item__thumb" src="https://placebear.com/400/400">
-                </div>
-                <div class="c-news-item__inner"><!-- element -->
-                    <h3 class="c-news-item__title"><!-- element -->
-                        Another piece of news
-                    </h3>
-                    <div class="c-news-item__text"><!-- element -->
-                        Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
-                        three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
-                        venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
-                        quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
-                        Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
-                        three hoops disciplinary hearing.
-                    </div>
-                </div>
-            </div>
-
-            <div class="l-list__item c-news-item"> <!-- element + block mix -->
-                <div class="c-news-item__inner"><!-- element -->
-                    <img class="c-news-item__thumb" src="https://placebear.com/300/300">
-                </div>
-                <div class="c-news-item__inner"><!-- element -->
-                    <h3 class="c-news-item__title"><!-- element -->
-                        I'm bored of news
-                    </h3>
-                    <div class="c-news-item__text"><!-- element -->
-                        Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
-                        three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
-                        venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
-                        quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
-                        Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
-                        three hoops disciplinary hearing.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-4 sidebar">
-        <h3 class="u-dev-annotation">4 wide</h3>
-        <h3>Sidebar</h3>
-
-
-        <div class="l-list"> <!-- block-->
-
-
-            <div class="l-list__item c-news-item c-news-item--summary"> <!-- element + block mix -->
-                <div class="c-news-item__inner"><!-- element -->
-                    <img class="c-news-item__thumb" src="https://placebear.com/200/200">
-                </div>
-                <div class="c-news-item__inner"><!-- element -->
-                    <h3 class="c-news-item__title"><!-- element -->
-                        A news item
-                    </h3>
-                    <div class="c-news-item__text"><!-- element -->
-                        Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
-                        three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
-                        venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
-                        quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
-                        Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
-                        three hoops disciplinary hearing.
-                    </div>
-                </div>
-            </div>
-
-            <div class="l-list__item c-news-item c-news-item--summary"> <!-- element + block mix -->
-                <div class="c-news-item__inner"><!-- element -->
-                    <img class="c-news-item__thumb" src="https://placebear.com/400/400">
-                </div>
-                <div class="c-news-item__inner"><!-- element -->
-                    <h3 class="c-news-item__title"><!-- element -->
-                        Another piece of news
-                    </h3>
-                    <div class="c-news-item__text"><!-- element -->
-                        Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
-                        three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
-                        venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
-                        quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
-                        Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
-                        three hoops disciplinary hearing.
-                    </div>
-                </div>
-            </div>
-
-            <div class="l-list__item c-news-item c-news-item--summary"> <!-- element + block mix -->
-                <div class="c-news-item__inner"><!-- element -->
-                    <img class="c-news-item__thumb" src="https://placebear.com/300/300">
-                </div>
-                <div class="c-news-item__inner"><!-- element -->
-                    <h3 class="c-news-item__title"><!-- element -->
-                        I'm bored of news
-                    </h3>
-                    <div class="c-news-item__text"><!-- element -->
-                        Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
-                        three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
-                        venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky
-                        quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius
-                        Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight
-                        three hoops disciplinary hearing.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="l-list__item c-news-item c-news-item--flow-col"> <!-- element + block mix -->
-            <div class="c-news-item__inner"><!-- element -->
-                <img class="c-news-item__thumb" src="https://placebear.com/200/200">
-            </div>
-            <div class="c-news-item__inner"><!-- element -->
-                <h3 class="c-news-item__title"><!-- element -->
-                    A news item
-                </h3>
-                <div class="c-news-item__text"><!-- element -->
-                    Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
-                    three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
-                    venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills
-                    The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead
-                    Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops
-                    disciplinary hearing.
-                </div>
-            </div>
-        </div>
-
-        <div class="l-list__item c-news-item c-news-item--flow-col"> <!-- element + block mix -->
-            <div class="c-news-item__inner"><!-- element -->
-                <img class="c-news-item__thumb" src="https://placebear.com/400/400">
-            </div>
-            <div class="c-news-item__inner"><!-- element -->
-                <h3 class="c-news-item__title"><!-- element -->
-                    Another piece of news
-                </h3>
-                <div class="c-news-item__text"><!-- element -->
-                    Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
-                    three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
-                    venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills
-                    The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead
-                    Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops
-                    disciplinary hearing.
-                </div>
-            </div>
-        </div>
-
-        <div class="l-list__item c-news-item c-news-item--flow-col"> <!-- element + block mix -->
-            <div class="c-news-item__inner"><!-- element -->
-                <img class="c-news-item__thumb" src="https://placebear.com/300/300">
-            </div>
-            <div class="c-news-item__inner"><!-- element -->
-                <h3 class="c-news-item__title"><!-- element -->
-                    I'm bored of news
-                </h3>
-                <div class="c-news-item__text"><!-- element -->
-                    Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak
-                    three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk
-                    venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills
-                    The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead
-                    Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops
-                    disciplinary hearing.
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
 
 </div>
 <footer class="u-sticky-footer">

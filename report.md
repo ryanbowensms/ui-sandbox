@@ -1,6 +1,3 @@
-# Parker report
-
-## Parker Report
 
 ### /Users/ryanbowen/dev/projects/rnd/developer-meetings/sass/dist/css/main.css
 
@@ -18,10 +15,10 @@
 - **Selectors Per Rule:** 1.3863216266173752
 - **Total Selectors:** 1500
 - **Identifiers Per Selector:** 1.16
-- **Specificity Per Selector:** 10.147333333333334
-- **Top Selector Specificity:** 40
-- **Top Selector Specificity Selector:** a:not([href]):not([tabindex]):hover
-- **Total Id Selectors:** 0
+- **Specificity Per Selector:** 10.207333333333333
+- **Top Selector Specificity:** 101
+- **Top Selector Specificity Selector:** #sidebar h3
+- **Total Id Selectors:** 1
 - **Total Identifiers:** 1717
 - **Total Declarations:** 1539
 - **Total Unique Colors:** 48
